@@ -1,0 +1,30 @@
+services:
+  general-assembly:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
+    depends_on:
+      - mongodb
+      - postgres
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../shared/:/home/student/shared
+  mongodb:
+    environment:
+      MONGO_INITDB_ROOT_PASSWORD: sei
+      MONGO_INITDB_ROOT_USERNAME: student
+    image: mongo:latest
+    restart: unless-stopped
+    volumes:
+      - ../database/mongodb/db:/data/db
+  postgres:
+    environment:
+      POSTGRES_DB: sei
+      POSTGRES_PASSWORD: sei
+      POSTGRES_USER: student
+    image: postgres
+    restart: unless-stopped
+    volumes:
+      - ../database/postgres/data:/var/lib/postgresql/data
