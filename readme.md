@@ -61,3 +61,31 @@ Once installed (may require a restart) make sure that your settings has "Use the
  WSL 2 based engine" is selected.
 
 ![docker settings](/img/windows-2.png)
+
+
+# Running our container
+Once we have installed Docker Desktop, let's install two extensions in 
+Visual Studio Code. To install an extension, click on the extensions icon on the 
+left side of your Visual Studio Code window. In the search bar type in 
+`ms-azuretools.vscode-docker` and click the install button on it. After that 
+search for the extension `ms-vscode-remote.remote-containers` and install it.
+
+These two extensions will allow us to run our docker container!
+
+1. Download this repository to your machine as a `.zip` file by clicking on the 
+green `Code` button above the file list.
+2. Unzip the folder anywhere on your machine, preferably somewhere that you will
+recognize to come back to. (e.g. on your Desktop or in your Documents folder)
+3. Open the folder that you have unzipped in Visual Studio Code.
+4. A pop up should appear in the bottom right corner asking you to re-open the 
+current folder in a container. Select `Reopen in Container`
+5. Wait for a little while and let VSCode run for a while
+
+Once this process has finished, click on the `New Terminal` button in VSCode as 
+shown in the following pictures. If yours looks like the final picture, 
+congratulations! You did it, you now have a fully fledged development
+environment for the rest of the cohort!
+
+![final step](/img/final-0.png)
+
+![final step](/img/final-1.png)
