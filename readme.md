@@ -86,6 +86,8 @@ shown in the following pictures. If yours looks like the final picture,
 congratulations! You did it, you now have a fully fledged development
 environment for the rest of the cohort!
 
+![final step](/img/final-2.png)
+
 ![final step](/img/final-0.png)
 
 ![final step](/img/final-1.png)
